@@ -1,3 +1,14 @@
+/ASTbuilder.class
+/ArrayA.class
+/BoolExp.class
+/BoolVariable.class
+/Devide.class
+/Environment.class
+/Equals.class
+/IfElse.class
+/IntConst.class
+/Larger.class
+/LargerOrEqual.class
 /MicroC_language/
 /Minus.class
 /Multiply.class
