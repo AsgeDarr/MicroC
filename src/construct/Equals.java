@@ -1,3 +1,4 @@
+package construct;
 
 
 public abstract class Equals implements a {

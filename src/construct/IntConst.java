@@ -1,3 +1,4 @@
+package construct;
 public abstract class IntConst implements a{
 	private int i;
 	
