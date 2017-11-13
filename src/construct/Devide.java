@@ -1,3 +1,4 @@
+package construct;
 
 public abstract class Devide implements a {
 	private a a1;

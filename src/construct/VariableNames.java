@@ -1,3 +1,4 @@
+package construct;
 public class VariableNames implements a{
 	private String names;
 	
