@@ -19,6 +19,8 @@ public class MicroC {
         CommonTokenStream tokens = new CommonTokenStream(lex);
         MicroCParser parser = new MicroCParser(tokens);
 		parser.program(); //This command parses the program.
+		
+		// Test
        
 	}
 }
