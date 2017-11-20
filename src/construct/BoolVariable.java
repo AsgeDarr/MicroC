@@ -1,5 +1,5 @@
 package construct;
-public class BoolVariable extends BoolExp {
+public class BoolVariable  {
 
 	private boolean value;
 	
@@ -7,7 +7,6 @@ public class BoolVariable extends BoolExp {
 		this.value = value;
 	}
 
-	@Override
 	public boolean evaluate(Environment Env) {
 		return value;
 	}
