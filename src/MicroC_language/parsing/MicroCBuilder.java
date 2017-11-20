@@ -18,6 +18,7 @@ public class MicroCBuilder implements MicroCVisitor {
 
 	@Override
 	public Object visitChildren(RuleNode arg0) {
+		
 		// TODO Auto-generated method stub
 		return null;
 	}
