@@ -1,7 +1,8 @@
 package construct;
 
 public abstract class ArrayA implements a {
-	private a[] array;
+	String variableName;
+	private int array;
 	
 	public ArrayA(a[] array) {
 		this.array = array;
