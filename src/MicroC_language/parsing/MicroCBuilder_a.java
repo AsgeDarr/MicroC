@@ -8,9 +8,11 @@ import org.antlr.v4.runtime.tree.TerminalNode;
 import MicroC_language.parsing.MicroCParser.*;
 import construct.*;
 
-public class MicroCBuilder_r extends MicroCBaseVisitor<a>{
+public class MicroCBuilder_a extends MicroCBaseVisitor<a>{
 
-
+	
+	
+	
 	@Override
 	public a visitAexpr3(Aexpr3Context ctx) {
 		if (ctx.IDENTIFIER() != null) {
