@@ -1,3 +1,4 @@
+package construct;
 public class VariableNotDefinedException extends Exception {
 
 	private static final long serialVersionUID = 1L;

@@ -1,3 +1,4 @@
+package construct;
 
 public abstract class Plus implements a {
 	private a a1;
