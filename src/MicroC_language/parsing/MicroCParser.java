@@ -1568,6 +1568,7 @@ public class MicroCParser extends Parser {
 	}
 
 	public final ProgramContext program() throws RecognitionException {
+		System.out.println("Your antlr-lib works properly");
 		ProgramContext _localctx = new ProgramContext(_ctx, getState());
 		enterRule(_localctx, 40, RULE_program);
 		int _la;
