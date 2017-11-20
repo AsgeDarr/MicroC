@@ -8,23 +8,31 @@ import org.antlr.v4.runtime.tree.TerminalNode;
 import MicroC_language.parsing.MicroCParser.*;
 import construct.*;
 
-public class MicroCBuilder_a extends MicroCBaseVisitor<a>{
-	
+public class MicroCBuilder_r extends MicroCBaseVisitor<a>{
 
-    @Override
-    public a visitAexpr3(Aexpr3Context ctx) {
-    	
-    	
-		return null;
-    }
-	
-	
+
+	@Override
+	public a visitAexpr3(Aexpr3Context ctx) {
+		if (ctx.IDENTIFIER() != null) {
+			String identifier = ctx.IDENTIFIER().toString();
+			if (ctx.aexpr() != null) {
+                return new ArrayA(identifier, visit(ctx.aexpr())) {};
+            }
+			return new VariableNames(ctx.INTEGER().toString()) {};
+		} else if (ctx.INTEGER() != null) {
+			return new IntConst(Integer.parseInt(ctx.INTEGER().toString())) {};
+		}
+
+		return visit(ctx.aexpr());
+	}
+
+
 	@Override
 	public a visitIdentifier(IdentifierContext ctx) {
 		VariableNames x = new VariableNames(ctx.toString()) {	
 		};
-		
-		
+
+
 		return x;
 	}
 
@@ -35,7 +43,3 @@ public class MicroCBuilder_a extends MicroCBaseVisitor<a>{
 		return aInt;
 	}
 }
-
-
-
-
