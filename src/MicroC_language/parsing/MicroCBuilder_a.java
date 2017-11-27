@@ -22,11 +22,11 @@ public class MicroCBuilder_a extends MicroCBaseVisitor<a>{
 		if (ctx.IDENTIFIER() != null) {
 			String identifier = ctx.IDENTIFIER().toString();
 			if (ctx.aexpr() != null) {
-                return new ArrayA(identifier, visit(ctx.aexpr())) {};
+                return new a.ArrayA(identifier, visit(ctx.aexpr())) {};
             }
-			return new VariableNames(ctx.INTEGER().toString()) {};
+			return new a.x(ctx.INTEGER().toString()) {};
 		} else if (ctx.INTEGER() != null) {
-			return new IntConst(Integer.parseInt(ctx.INTEGER().toString())) {};
+			return new a.IntConst(Integer.parseInt(ctx.INTEGER().toString())) {};
 		}
 
 		return visit(ctx.aexpr());
@@ -35,7 +35,7 @@ public class MicroCBuilder_a extends MicroCBaseVisitor<a>{
 
 	@Override
 	public a visitIdentifier(IdentifierContext ctx) {
-		VariableNames x = new VariableNames(ctx.toString()) {	
+		a.x x = new a.x(ctx.toString()) {	
 		};
 
 
@@ -44,7 +44,7 @@ public class MicroCBuilder_a extends MicroCBaseVisitor<a>{
 
 	@Override
 	public a visitInteger(IntegerContext ctx) {
-		IntConst aInt = new IntConst(Integer.parseInt(ctx.INTEGER().toString())) {
+		a.IntConst aInt = new a.IntConst(Integer.parseInt(ctx.INTEGER().toString())) {
 		};
 		return aInt;
 	}
