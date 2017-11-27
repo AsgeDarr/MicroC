@@ -12,21 +12,17 @@ public abstract interface a {
 	}
 
 	public abstract class x implements a{
-		private String names;
+		private VariableNames names;
 		
-		public x(String names) {
+		public x(VariableNames names) {
 			this.names = names;
-		}
-		
-		public String evaluate(Environment Env) {
-			return names;
 		}
 	}
 	
 	public abstract class IntConst implements a{
-		private int i;
+		private IntegerConstants i;
 		
-		public IntConst(int i) {
+		public IntConst(IntegerConstants i) {
 			this.i = i;
 		}
 		
