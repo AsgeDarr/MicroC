@@ -11,10 +11,10 @@ public abstract interface a {
 		}
 	}
 
-	public class VariableNames implements a{
+	public abstract class x implements a{
 		private String names;
 		
-		public VariableNames(String names) {
+		public x(String names) {
 			this.names = names;
 		}
 		
