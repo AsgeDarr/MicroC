@@ -10,7 +10,11 @@ import construct.*;
 
 public class MicroCBuilder_a extends MicroCBaseVisitor<a>{
 
-	
+	public a visitOpr(OprContext ctx) {
+		
+		
+		return null;
+	}
 	
 	
 	@Override
