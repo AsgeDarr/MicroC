@@ -31,6 +31,19 @@ public abstract interface a {
 		}
 		
 	}
+	
+	public abstract class ArithmeticOpr implements a	{
+		
+		private a a1;
+		private a a2;
+		private opB opr;
+
+		public ArithmeticOpr(a a1, a a2, opB opr)	{
+			this.a1 = a1;
+			this.a2 = a2;
+			this.opr = opr;
+		}
+	}
 
 	
 	
